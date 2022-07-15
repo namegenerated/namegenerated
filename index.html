@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Random Name Generator Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,6 +12,7 @@
         width: 50%;
         border-radius: 10px;
       }
+     
       td{
         text-align: left;
         padding-left: 20px;
@@ -30,7 +32,14 @@
         width: auto;
         text-align: center;
         height: 50px;
-        
+      }
+      @media only screen and (max-width: 600px) {
+      .cont{       
+            width: 100%;
+          }
+      table{
+        width: 100%;
+      }
       }
       p{
         font-size: 20px;
@@ -83,7 +92,12 @@
         width: 50%;
         background-color: rgba(1, 1, 1, .0);
       }
-      .td2{
+      @media only screen and (max-width: 600px) {
+      
+      }
+
+
+      /*.td2{
         width: 550px;
         height: 100px;
         padding: 0px;
@@ -93,7 +107,7 @@
       }
       h1{
         padding-bottom: 20px;
-      }
+      }*/
     </style>
 
 </head>
@@ -127,17 +141,8 @@
   <br>
   <br>
   <br>
-  <table class="input">
-    <tr>
-      <td class="td2">
-        <div>
-          <i class="fa-solid fa-person"></i>
-          <input class="boygen" id="boygen" type="button" value="Generate Random Male Name" onclick="generateNameBoy();"/>
-        </div>
-      </td>
-      <td class="td2"><input class="girlgen" id="girlgen" type="button" value="Generate Random Female Name" onclick="generateNameGirl();"/></td>
-    </tr>
-  </table>
+        <input class="boygen" id="boygen" type="button" value="Generate Male Name" onclick="generateNameBoy();"/>
+        <input class="girlgen" id="girlgen" type="button" value="Generate Female Name" onclick="generateNameGirl();"/>
   </center> 
 </div>
 </center>
